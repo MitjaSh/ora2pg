@@ -14,7 +14,7 @@ DO $$
 begin
 	raise notice 'Result: %', ora2pg.fn_transactions1();
 end;
-$$
+$$;
 
 -- SQL Error [2D000]: ERROR: invalid transaction termination
 -- Чтобы работало, надо либо убирать COMMIT, либо переделывать функцию в процедуру
@@ -32,7 +32,7 @@ DO $$
 begin
 	raise notice 'Result: %', ora2pg.fn_transactions2();
 end;
-$$
+$$;
 
 SELECT * FROM ora2pg.tbl_log ORDER BY DT DESC;
 
@@ -49,7 +49,7 @@ DO $$
 begin
 	call ora2pg.pr_transactions1();
 end;
-$$
+$$;
 
 SELECT * FROM ora2pg.tbl_log ORDER BY DT DESC;
 
@@ -76,7 +76,7 @@ DO $$
 begin
 	call ora2pg.pr_transactions2();
 end;
-$$
+$$;
 
 -- SQL Error [P0001]: ERROR: Rerised exception: 2D000 cannot commit while a subtransaction is active
 -- 2D000 cannot commit while a subtransaction is active
@@ -109,7 +109,7 @@ DO $$
 begin
 	call ora2pg.pr_transactions3();
 end;
-$$
+$$;
 
 SELECT * FROM ora2pg.tbl_log ORDER BY DT DESC;
 
@@ -136,7 +136,7 @@ DO $$
 begin
 	call ora2pg.pr_transactions4();
 end;
-$$
+$$;
 
 SELECT * FROM ora2pg.tbl_log ORDER BY DT DESC;
 
