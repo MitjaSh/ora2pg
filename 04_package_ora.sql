@@ -1,3 +1,5 @@
+-- Под пользователем ora2pg
+
 CREATE OR REPLACE PACKAGE my_package AS
 
     PROCEDURE pr_set_var(p_val IN VARCHAR2);

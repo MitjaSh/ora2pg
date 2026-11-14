@@ -1,3 +1,5 @@
+-- Под пользователем ora2pg
+
 CREATE OR REPLACE FUNCTION fn_transactions RETURN varchar2
 AS
 BEGIN

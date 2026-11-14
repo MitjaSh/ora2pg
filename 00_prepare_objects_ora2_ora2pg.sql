@@ -1,3 +1,5 @@
+-- Под пользователем ora2pg
+
 CREATE TABLE tbl_log (
 dt timestamp,
 msg varchar2(255),

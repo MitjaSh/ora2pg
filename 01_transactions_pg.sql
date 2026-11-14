@@ -1,3 +1,5 @@
+-- Под суперпользователем (root)
+
 -- Ограничение 1: Управление транзакциями внутри функций запрещено
 
 CREATE OR REPLACE FUNCTION ora2pg.fn_transactions1() RETURNS varchar

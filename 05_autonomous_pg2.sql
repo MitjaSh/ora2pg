@@ -1,3 +1,5 @@
+-- Под суперпользователем (root)
+
 -- Это не будет работать в ванильном PostgreSQL, только в Postgres Pro
 CREATE or replace PROCEDURE pr_log_autonomous2 (IN v_msg varchar)
 LANGUAGE plpgsql AS $$

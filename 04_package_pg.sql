@@ -1,3 +1,5 @@
+-- Под суперпользователем (root)
+
 -- Этот пример не будет работать в ванильном PostgreSQL, только в Postgres Pro
 CREATE OR REPLACE PACKAGE my_package
 	-- Вместо CREATE PACKAGE можно руками создать схему my_package

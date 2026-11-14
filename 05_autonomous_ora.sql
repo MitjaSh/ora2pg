@@ -1,3 +1,5 @@
+-- Под пользователем ora2pg
+
 CREATE OR REPLACE procedure pr_log_autonomous(p_msg VARCHAR2) IS
 PRAGMA AUTONOMOUS_TRANSACTION;
 BEGIN

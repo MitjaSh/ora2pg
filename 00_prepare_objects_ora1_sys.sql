@@ -1,3 +1,5 @@
+-- Под пользователем с ролью SYSDBA
+
 CREATE USER ora2pg IDENTIFIED BY ora2pg;
 
 GRANT CONNECT, RESOURCE, CREATE PROCEDURE, CREATE VIEW TO ora2pg;
